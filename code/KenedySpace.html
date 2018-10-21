@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+    box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+    padding: 80px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+}
+
+/* Increase the font size of the heading */
+h1 {
+    font-size: 40px;
+	color: white;
+}
+p {
+	color: white;
+	}
+h2{
+	color: white;
+	}
+h5{
+		color: white;
+	}
+h3{
+		color: white;
+	}
+/* Style the top navigation bar */
+.navbar {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+    float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Column container */
+.row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+    -ms-flex: 30%; /* IE10 */
+    flex: 30%;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+/* Main column */
+.main {   
+    -ms-flex: 70%; /* IE10 */
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+}
+
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+    .row {   
+        flex-direction: column;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+.container .btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background-color: #f1f1f1;
+    color: black;
+    font-size: 16px;
+    padding: 16px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.container .btn:hover {
+    background-color: black;
+    color: white;
+}
+</style>
+</head>
+<body background= "galaxy_background.jpg">
+
+<div class="header">
+  <h1>IntuSpace</h1>
+  <p>Painting stars in the sunset</p>
+</div>
+
+<div class="navbar">
+  <a href="intuspace.html">Home</a>
+  <a href="KenedySpace.html">Florida</a>
+  <a href="#">Japan</a>
+  <a href="index.html" class="right">App</a>
+</div>
+
+<div>
+  <div></div>
+  <div>
+      <h2>Next launches of Rockets at </h2>
+      <h5>Last updated: 21/10/18</h5>
+<h1 id="demo"></h1>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Oct 26, 2018 04:00:00").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+    
+    // Find the distance between now and the count down date
+    var distance = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "EXPIRED";
+    }
+}, 1000);
+</script>
+    
+    
+	  
+      <h3>Kennedy Space Centre: NORTHROP GRUMMAN PEGASUS XL ICON</h3>
+      <h3>NORTHROP GRUMMAN PEGASUS XL ICON will take off at 4 AM GMT-4
+      <br>
+      </h3>
+      <h2>Rocket Info:</h2>
+      <h3>Weather: Ideal (NO DELAYS EXPECTED)</h3>
+	  <h3>Temperature: 22 °C</h3>
+	  <h3>Wind Speed/Direction: 5 mph NW</h3>
+	  <h3>Humidity: 94%</h3>
+	  
+	  <h3>MISSION: To explore a zone in our atmosphere where Earth weather and space weather meet.</h3>
+<h3>Launch Viewing:
+Kennedy Space Center Visitor Complex offers the closest public viewing of launches, as well as launch commentary, bleacher seating and access to visitor complex exhibits and attractions.
+
+</h3>
+    <p>&nbsp;</p>
+  </div>
+</div>
+
+<div>
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>
